@@ -1,39 +1,31 @@
-# SQL Project Documentation
+# 💾 MySQL Project Repository
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [SQL Queries](#sql-queries)
-  - [Query 1](#query-1)
-  - [Query 2](#query-2)
-  - [Query 3](#query-3)
-  - [Query 4](#query-4)
-  - [Query 5](#query-5)
-  - [Query 6](#query-6)
-  - [Query 7](#query-7)
-  - [Query 8](#query-8)
-  - [Query 9](#query-9)
-  - [Query 10](#query-10)
-- [Usage](#usage)
-- [Author](#author)
+This repository contains coursework projects related to database modeling and SQL query development, structured for clarity and ease of navigation.
 
-## Introduction
-This project contains a set of SQL queries designed to extract and manipulate data from a database related to a faculty and course offering system. The queries perform various tasks such as selecting specific records, joining tables, grouping data, and applying conditions.
+---
 
-## Project Structure
-The project consists of a single file containing all the SQL queries:
-- `queries.sql`: Contains all the SQL queries listed and explained below.
+## 📁 Folder Structure
 
-## SQL Queries
+### 📂 Database Modelling Project
+Includes materials for the database design and modeling assignment:
+- `Assignment1_MinHtetAung.mwb.bak` – MySQL Workbench backup file
+- `MinHtetAung_A1.docx` – Assignment report
+- `MinHtetAung_A1_2.png` – ERD or supporting diagram
 
-### Query 1
-```sql
-SELECT 
-  FacFirstName AS 'FirstName', 
-  FacLastName AS 'LastName', 
-  FacCity AS 'City', 
-  FacSalary AS 'facsalary', 
-  ROUND(FacSalary - (FacSalary * 0.05)) AS 'DecreasedSalary', 
-  FacHireDate AS 'HireDate'
-FROM FACULTY
-WHERE YEAR(FacHireDate) < 1998;
+### 📂 Query Development Project
+Contains files related to SQL query development tasks:
+- `Assignment2_MinHtetAung.docx` – Query assignment documentation
+- `uniEnrolDB.sql` – SQL script to create/populate university enrollment database
+- `2023-SP51-CP2404-A2-Specification.pdf` – Assignment specification
+
+---
+
+## 🛠 Tools Used
+- MySQL Workbench
+- SQL (DDL & DML)
+- Microsoft Word for documentation
+
+---
+
+## 📚 License
+This project is licensed under the [MIT License](LICENSE).
